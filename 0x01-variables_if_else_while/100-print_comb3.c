@@ -1,26 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - print double digit comination
+ * main - print double digit combos
+ * Description: print double digit combos
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i, m;
+	int i, j;
 
 	i = 48;
-	m = 48;
+	j = 48;
 
 	while (i < 58)
 	{
-		m = i + 1;
-		while (m < 58)
+		j = i + 1;
+		while (j < 58)
 		{
 			putchar(i);
-			putchar(m);
+			putchar(j);
 
-			if (i < 56 || m < 57)
+			if (i < 56 || j < 57)
 			{
 				putchar(44);
 				putchar(32);
