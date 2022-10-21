@@ -1,25 +1,34 @@
 #include "main.h"
 
 /**
- * print_line - prints line depending on value passed
- * @n: value of line to print
+ * print_diagonal - draw diagonal line
  *
+ * @n: lenght of diagonal
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int i = 0;
-
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		while (i < n)
+		int i, j;
+
+		for (i = 0; i < n; i++)
 		{
-			_putchar('_');
-			i++;
+			for (j = 0; j < n; j++)
+			{
+				if (j == i)
+				{
+					_putchar('\\');
+				}
+				else if (j < i)
+				{
+					_putchar(' ');
+				}
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
