@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strcat - string concatenate overwriting zero byte in src
